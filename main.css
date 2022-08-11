@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  width: 900px;
+  margin: 30px auto;
+  font-size: 1.6rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 200px [grid-end];
+  grid-template-rows: [header-start] 150px [header-end box-start] 300px [box-end main-start] 500px [main-end footer-start] 100px [footer-end];
+  gap: 20px;
+}
+
+.item {
+  background: red;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-column: col-start 1/grid-end;
+  grid-row: header-start/header-end;
+}
+
+.sidebar {
+  grid-row: box-start/main-end;
+  grid-column: col-end 3/grid-end;
+}
+
+.main {
+  grid-column: col-start 1/col-end 3;
+  grid-row: main-start/main-end;
+}
+
+.footer {
+  grid-row: footer-start/footer-end;
+  grid-column: col-start 1/grid-end;
+}
+
+/*# sourceMappingURL=main.css.map */
