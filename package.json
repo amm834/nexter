@@ -4,7 +4,8 @@
   "description": "Nexter UI",
   "main": "index.js",
   "scripts": {
-    "watch": "sass sass/main.scss  css/style.css -w"
+    "watch": "sass sass/main.scss  css/style.css -w",
+    "serve": "live-server ."
   },
   "repository": {
     "type": "git",

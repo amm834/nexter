@@ -14,6 +14,7 @@
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   grid-row-gap: 3.5rem;
+  position: relative;
 
   &__img {
     width: 100%;
@@ -28,8 +29,10 @@
     grid-column: 2/3;
     grid-row: 1/2;
     z-index: 5;
-    justify-self: end;
-    margin: 2rem;
+    margin-right: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
   }
 
   &__name {
