@@ -1,0 +1,30 @@
+.features {
+  grid-column: center-start/center-end;
+
+  margin: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: auto auto;
+  grid-gap: 6rem;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 1.5rem;
+
+  &__icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    fill: $color-primary;
+    transform: translateY(-1.2rem);
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: $color-grey-dark-1;
+    grid-column: 2/-1;
+  }
+}
