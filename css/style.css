@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-size: 65.25%;
+  font-size: 65.5%;
   font-family: "Nunito", sans-serif;
 }
 
@@ -315,6 +315,37 @@ body {
 .footer {
   background: #101d2c;
   grid-column: full-start/full-end;
+  padding: 5rem 2.5rem;
+}
+.footer__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  place-items: center;
+}
+.footer__link:visited, .footer__link:link {
+  text-align: center;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #f9f7f6;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s;
+}
+.footer__link:hover, .footer__link:active {
+  background: #1e3651;
+  transform: translateY(-0.3rem);
+}
+
+.copyright {
+  font-size: 1rem;
+  color: #aaa;
+  text-align: center;
+  margin-top: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
